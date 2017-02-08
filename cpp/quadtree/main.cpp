@@ -103,7 +103,7 @@ int find_matches( const Quad_tree<T> & qtree, const Obj_type & o )
 {
     std::vector< T > res;
     qtree.for_each_match( o, [&res]( const T & obj ) { res.push_back( obj ); } );
-    //cout << "(" << T_counter<Quad_tree<T>>::count++ << ")- number of potential collisions : " << res.size() << endl;
+    cout << "(" << T_counter<Quad_tree<T>>::count++ << ")- number of potential collisions : " << res.size() << endl;
 
     /*
     for ( const T & item : res )
@@ -122,7 +122,7 @@ int find_line_matches( const Quad_tree<T> & qtree, const Obj_type & o)
     qtree.line_intersect( o, [&res]( const T & obj ){ res.push_back( obj ); } );
     functor<T> f( res );
     qtree.first_line_intersect( o, f );
-    //cout << "(" << T_counter<Quad_tree<T>>::count++ << ")- number of potential collisions : " << res.size() << endl;
+    cout << "(" << T_counter<Quad_tree<T>>::count++ << ")- number of potential collisions : " << res.size() << endl;
 
     /*
     for ( const T & item : res )

@@ -1,5 +1,5 @@
-#ifndef QUADTREE_H_INCLUDED
-#define QUADTREE_H_INCLUDED
+#ifndef DYSON_N223_QUADTREE_H_INCLUDED
+#define DYSON_N223_QUADTREE_H_INCLUDED
 
 #include "geom.h"
 
@@ -675,4 +675,4 @@ namespace detail
 
 }
 
-#endif // QUADTREE_H_INCLUDED
+#endif // DYSON_N223_QUADTREE_H_INCLUDED
