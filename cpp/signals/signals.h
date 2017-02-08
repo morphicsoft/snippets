@@ -53,6 +53,8 @@ public:
     {
     }
 
+protected:
+
     void fire_impl( Args... args ) const
     {
         slot_( args... );
@@ -74,6 +76,8 @@ public:
         ,   slot_   ( slot )
     {
     }
+
+protected:
 
     void fire_impl( Args... args ) const
     {
@@ -98,6 +102,8 @@ public:
         ,   slot_   ( slot )
     {
     }
+
+protected:
 
     void fire_impl( Args... args ) const
     {
@@ -129,6 +135,8 @@ public:
     {
     }
 
+protected:
+
     void fire_impl( Args... args ) const
     {
         (c_.*slot_).raise( args... );
@@ -153,6 +161,8 @@ public:
     {
     }
 
+protected:
+    
     void fire_impl( Args... args ) const
     {
         (*slot_).raise( args... );
